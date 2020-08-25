@@ -10,9 +10,12 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+// Route::get('save-location', 'TrackingController@store');
 
 Auth::routes();
 
 Route::get('/', 'ChatsController@index');
 Route::get('messages', 'ChatsController@fetchMessages');
 Route::post('messages', 'ChatsController@sendMessage');
+Route::get('test', 'TrackingController@isValid');
+
