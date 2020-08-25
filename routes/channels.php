@@ -14,3 +14,8 @@
 Broadcast::channel('chat', function ($user) {
 	return $user;
 });
+
+
+Broadcast::channel('tracking', function() {
+    return true;
+});
